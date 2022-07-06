@@ -12,7 +12,10 @@ axios.get(url).then(response => {
     //console.log(funcionarios)
 
     // mulher chinesa com menor salário?
-    const func = funcionarios.filter(chineses).filter(mulheres).filter(menorSalario)
+    const func = funcionarios
+        .filter(chineses)
+        .filter(mulheres)
+        .filter(menorSalario)
 
     console.log(func)
 })
